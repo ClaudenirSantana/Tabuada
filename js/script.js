@@ -1,14 +1,15 @@
-const multiplicationForm = document.querySelector(".form-tabuada");
+const multiplicationForm = document.querySelector("#form-tabuada");
 const numberInput = document.querySelector("#number");
 const multiplicationInput = document.querySelector("#multiplicator");
 const multiplicationTitle = document.querySelector("#result-title span");
 const multiplicationTable = document.querySelector("#operations");
+const calculator = document.querySelector("#calculator");
 
 // Funções
 const createTable = (number, multiplicationNumber) => {
   multiplicationTable.innerHTML = "";
 
-  for (i = 1; i <= multiplicationNumber; i++) {
+  for (let i = 1; i <= multiplicationNumber; i++) {
     const result = number * i;
 
     const template = `<div class="row">

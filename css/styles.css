@@ -1,17 +1,10 @@
+/* Reset e Configurações Globais */
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
-}
-
-.navbar {
-  background-color: #0a6cff;
-
-  box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center; /* espaço entre os itens */
 }
 
 body {
@@ -21,26 +14,39 @@ body {
   flex-direction: column;
 }
 
+/* Header / Navbar */
+
+#navbar {
+  background-color: #0a6cff;
+  box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#gerator-title {
+  color: #fff;
+  font-size: clamp(1rem, 3vh, 4rem);
+  font-weight: bold;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* Seção: Calculadora (Container Principal) */
+
 #calculator {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #0a6cff;
-  width: fit-content; /* só ocupa o tamanho do conteúdo */
-  margin: 0 auto; /* centraliza na tela */
+  width: fit-content;
+  margin: 0 auto;
   box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
   margin-top: 3rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
-}
-
-.gerator-title {
-  color: #fff;
-  font-size: clamp(1.2rem, 3vh, 4rem);
-  font-weight: bold;
-  height: 60px;
-  display: flex;
-  align-items: center;
 }
 
 .title {
@@ -54,7 +60,9 @@ body {
   margin-top: 4rem;
 }
 
-.form-tabuada {
+/*  Formulário de Entrada */
+
+#form-tabuada {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -64,14 +72,8 @@ body {
   gap: 1rem;
   padding: 2rem 3rem;
   width: fit-content; /* só ocupa o tamanho do conteúdo */
-  margin: 0 auto; /* centraliza na tela */
+  margin: 0 auto;
   margin-top: 1rem;
-}
-
-.row-inputs {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
 }
 
 .form-control {
@@ -90,6 +92,8 @@ body {
   margin-top: 5px;
 }
 
+/* Botão */
+
 .btn {
   flex-basis: 100%;
   display: flex;
@@ -101,16 +105,17 @@ body {
   color: #fff;
   border: none;
   background-color: #464646;
-  padding: 0.4rem 4rem; /* largura do botão */
+  padding: 0.4rem 4rem;
   border-radius: 0.4rem;
 }
+
+/* Resultado da Tabuada */
 
 #result {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   min-height: 200px;
 }
 
@@ -120,6 +125,14 @@ body {
   margin-top: 2.6rem;
   font-weight: bold;
 }
+
+#row-inputs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/*  Área de Operações (Linhas da Tabuada) */
 
 #operations {
   display: flex;
@@ -139,22 +152,21 @@ body {
   border-bottom: none;
   padding: 0.7rem;
   width: 120px;
-  border: 1px solid #ccc;
   align-items: center;
-}
-
-#operations .row:last-child {
-  border-bottom: 1px solid #ccc;
 }
 
 #operations .result {
   margin-left: 0.4rem;
 }
 
+/* Ajustes de Tamanho Para Tabelas Grandes */
+
 #calculator.large-operations {
-  padding-bottom: 6rem; /* ou o valor que você quiser */
-  margin-bottom: 3rem; /* cria um espaço maior embaixo */
+  padding-bottom: 6rem;
+  margin-bottom: 3rem;
 }
+
+/* Footer / Contatos */
 
 #section-contact {
   display: flex;
@@ -163,7 +175,7 @@ body {
   justify-content: center;
 }
 
-.contact {
+#contact {
   display: flex;
   justify-content: center;
   min-height: 100px;
@@ -175,22 +187,28 @@ body {
   box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
 }
 
-.contact li {
+#contact li {
   width: 400px;
   text-decoration: none;
   list-style: none;
   text-align: center;
 }
 
-.contact li a {
+#contact li a {
   color: #fff;
   text-decoration: none;
 }
+
+/* Responsividade */
 
 @media (max-width: 840px) {
   #calculator {
     padding: 1rem 2rem;
     margin-top: 6rem;
     margin-bottom: 3rem;
+  }
+
+  #gerator-title {
+    padding: 3rem;
   }
 }
