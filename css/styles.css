@@ -154,10 +154,13 @@ body {
   display: flex;
   justify-content: center;
   border: 1px solid #ccc;
-  border-bottom: none;
   padding: 0.7rem;
-  width: 120px;
+  width: 180px;
   align-items: center;
+}
+
+#operations .row:last-child {
+  border-bottom: 1px solid #ccc;
 }
 
 #operations .result {
@@ -209,7 +212,7 @@ body {
 @media (max-width: 840px) {
   #calculator {
     padding: 1rem 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   #gerator-title {
