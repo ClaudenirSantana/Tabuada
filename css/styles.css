@@ -204,8 +204,8 @@ body {
 @media (max-width: 840px) {
   #calculator {
     padding: 1rem 2rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
   }
 
   #gerator-title {
