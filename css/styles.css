@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #0a6cff;
+
+  box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* espaço entre os itens */
+}
+
+body {
+  background-color: #91bdff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a6cff;
+  width: fit-content; /* só ocupa o tamanho do conteúdo */
+  margin: 0 auto; /* centraliza na tela */
+  box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.gerator-title {
+  color: #fff;
+  font-size: clamp(1.2rem, 3vh, 4rem);
+  font-weight: bold;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 1.4rem;
+  font-size: clamp(0.8rem, 4vh, 5rem);
+  color: #ffffff;
+  margin-top: 4rem;
+}
+
+.form-tabuada {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  width: fit-content; /* só ocupa o tamanho do conteúdo */
+  margin: 0 auto; /* centraliza na tela */
+  margin-top: 1rem;
+}
+
+.row-inputs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control input {
+  text-align: center;
+  width: 4rem;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.3rem 0;
+  margin-top: 5px;
+}
+
+.btn {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn input {
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  background-color: #464646;
+  padding: 0.4rem 4rem; /* largura do botão */
+  border-radius: 0.4rem;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 200px;
+}
+
+#result-title {
+  font-size: clamp(0.7rem, 3vh, 4rem);
+  color: #fff;
+  margin-top: 2.6rem;
+  font-weight: bold;
+}
+
+#operations {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #fff;
+  padding: 1.4rem 1.4rem;
+  border-radius: 1rem;
+  margin-top: 1.4rem;
+  justify-content: center;
+}
+
+#operations .row {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 0.7rem;
+  width: 120px;
+  border: 1px solid #ccc;
+  align-items: center;
+}
+
+#operations .row:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+#operations .result {
+  margin-left: 0.4rem;
+}
+
+#calculator.large-operations {
+  padding-bottom: 6rem; /* ou o valor que você quiser */
+  margin-bottom: 3rem; /* cria um espaço maior embaixo */
+}
+
+#section-contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  min-height: 100px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0a6cff;
+  width: 100%;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
+}
+
+.contact li {
+  width: 400px;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+.contact li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 840px) {
+  #calculator {
+    padding: 1rem 2rem;
+    margin-top: 8rem;
+  }
+}

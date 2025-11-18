@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Gerador de tabuada simples e rápido. Digite um número e gere a tabuada até onde desejar.">
+
+
+  <!-- Title page -->
+  <title>Tabuada</title>
+  <link rel="icon" href="img/icon.png" type="image/x-icon">
+
+  <!-- Js -->
+  <script src="js/script.js" defer></script>
+  <!-- Css -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+
+  <header>
+    <nav class="navbar">
+      <div class="gerator-title">Gerador de tabuada</div>
+
+    </nav>
+  </header>
+
+
+  <!-- Conteúdo -->
+  <section id="calculator">
+    <h1 class="title">Digite um número e confirme para <br> gerar uma tabuada</h1>
+    <form class="form-tabuada">
+      <div class="row-inputs">
+        <div class="form-control">
+          <label for="number">Tabuada do</label>
+          <input type="number" name="number" id="number" placeholder="3" required>
+        </div>
+        <div class="form-control">
+          <label for="multiplicator">Multiplicar até</label>
+          <input type="number" name="multiplicator" id="multiplicator" value="10" required>
+
+        </div>
+      </div>
+
+      <div class="btn">
+        <input type="submit" name="btn" id="btn" value="Calcular">
+      </div>
+    </form>
+
+
+    <div id="result">
+      <h2 id="result-title">Tabuada do número: <span></span></h2>
+      <div id="operations">
+        <p>Informe um número para calcular <br> a tabuada</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+
+  <footer id="section-contact">
+    <ul class="contact">
+      <li>
+        <a href="mailto:claudenirsantana11@gmail.com">
+          E-mail: claudenirsantana11@gmail.com</a>
+      </li>
+      <li>
+        <a href="https://github.com/ClaudenirSantana" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/claudenir-santana-5642aa23b/" target="_blank">Linkedin</a>
+      </li>
+    </ul>
+  </footer>
+
+
+</body>
+
+</html>
