@@ -38,11 +38,9 @@ Ao clicar em **Calcular**, o JavaScript cria automaticamente as linhas da tabuad
 * **CSS3**
 * **JavaScript (DOM)**
 
-## ▶️ Como executar
+## ▶️ Link do site
 
-1. Baixe ou clone este repositório.
-2. Abra o arquivo **index.html** em qualquer navegador.
-3. Digite um número, selecione o limite da multiplicação e clique em **Calcular**.
+* https://claudenirsantana.github.io/Tabuada/
 
 ## 📧 Contato
 
