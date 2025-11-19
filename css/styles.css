@@ -219,3 +219,29 @@ body {
     padding: 3rem;
   }
 }
+
+@media (max-width: 386px) {
+  #calculator {
+    padding: 0 0 8rem 0;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  #gerator-title {
+    font-size: 1.4rem;
+  }
+
+  #result-title {
+    font-size: 1.4rem;
+  }
+
+  #form-tabuada {
+    padding: 1rem 2rem;
+  }
+
+  .form-control > label {
+    font-size: 0.8rem;
+  }
+}
